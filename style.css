@@ -1,0 +1,36 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Shadows */
+.shadow-orange-btn { box-shadow: 0 15px 35px -8px rgba(255, 112, 0, 0.35); }
+.shadow-green-btn { box-shadow: 0 15px 35px -8px rgba(46, 204, 113, 0.25); }
+.shadow-soft { box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.05); }
+
+/* Card Components */
+.card-ui {
+    background: white; padding: 3rem 1.5rem; border-radius: 2.5rem;
+    display: flex; flex-direction: column; align-items: center;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.03); transition: 0.4s ease;
+}
+.card-ui:hover { transform: translateY(-10px); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.08); }
+
+.icon-ui { background: #FFF5ED; width: 4rem; height: 4rem; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1.5rem; color: #FF7000; }
+.icon-ui-solid { background: #FF7000; width: 4rem; height: 4rem; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1.5rem; color: white; }
+
+/* Learn Box */
+.learn-box { display: flex; gap: 1.25rem; padding: 2rem; background: white; border-radius: 2.25rem; border: 1px solid #F3F3F3; transition: 0.3s; align-items: center; }
+.learn-box:hover { border-color: #FF7000; transform: translateY(-5px); }
+
+/* Benefit Icons */
+.check-icon { background: #2ECC71; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+
+/* Payment Row */
+.pay-row { display: flex; justify-content: space-between; align-items: center; padding: 1.15rem 1.5rem; background: #FCFCFC; border-radius: 1.75rem; border: 1px solid #F1F1F1; cursor: pointer; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.pay-row:hover { background: white; border-color: #FF7000; transform: scale(1.02); }
+
+/* Animation */
+.hover-pop:hover { transform: scale(1.03); filter: brightness(1.05); }
+.floating { animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
